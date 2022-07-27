@@ -1,0 +1,91 @@
+/* YOU SHOULD CONVERT EVERYTHING TO PERCENTAGES/VW/REMS (NO PIXELS) */
+/* SHOULD LOOK AT MOZILLA'S SEARCH BAR FOR INSPIRATION */
+
+html {
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+body { 
+    background-color: lightgray;
+    width: 300px;
+    max-height: 500px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    border: solid darkgray .5rem;
+    padding: .5rem;
+}
+
+h1 {
+    /* border: solid black 1px; */
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    /* border: solid black 1px; */
+    margin-bottom: 0;
+}
+
+.list-container {
+    /* border: solid red 1px; */
+    padding: 5px;
+    padding-top: 0;
+}
+
+.list {
+    /* border: solid orange 1px; */
+    /* padding-left: 10.8045px; */
+    /* padding-left: 29.1955px; */
+    padding-left: 0;
+}
+
+li {
+    /* border: solid yellow 1px; */
+    font-size: 16px;
+    background-color: darkgray;
+    display: flex;
+    margin: .5rem 0rem;
+}
+
+.li-content-container {
+    /* border: solid green 1px; */
+    display: flex;
+    margin: 5px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+input {
+    /* border: solid blue 1px; */
+    font-size: 16px;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+}
+
+li p {
+    margin-left: 4px;
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgba(0,0,0,.15);
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    border: solid black 1px;
+    margin: auto;
+    padding: .5rem;
+    font-size: 1.5em;
+}

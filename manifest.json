@@ -1,0 +1,35 @@
+{
+    "manifest_version": 3,
+    "name": "Gabe Search Bar Content Blocker",
+    "version": "1.0",
+    "description": "Gabe Search Bar Content Blocker",
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content-script.js"]
+        }
+    ],
+
+    "background": {
+        "service_worker": "background.js"
+      },
+    
+    "action": {
+        "default_icon": "img.png",
+        "default_popup": "popup.html",
+        "default_title": "Gabe Search Bar Content Blocker"
+    },
+
+    
+    "permissions": [
+        "tabs",
+        "storage",
+        "declarativeNetRequest"
+    ],
+    "host_permissions": [
+        "https://www.nba.com/",
+        "https://www.nfl.com/"
+      ]
+}
+

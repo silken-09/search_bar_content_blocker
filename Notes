@@ -1,0 +1,78 @@
+POPUP
+    Checklist:
+        On submit:
+            Works if search bar is autofocused
+            Works if have to manually click on search bar
+        On page (re)load:
+            Works if search bar is autofocused
+            Works if have to manually click on search bar
+        On new tab:
+            Works if search bar is autofocused
+            Works if have to manually click on search bar
+        On new window:
+            Works if search bar is autofocused
+            Works if have to manually click on search bar
+        On button click to open search bar:
+            Works if search bar is autofocused
+            Works if have to manually click on search bar
+
+    Potential Changes:  
+        Submit button:
+            If keeping:
+                Prevent window from closing if user hasn't submitted changes
+                Have SUBMIT BUTTON light up if a change has been made
+                Make SUBMIT BUTTON unclickable if no changes have been made
+                    Probably unnecessary
+            If removing:
+                Submit each individual change when PLUS/DELETE button is clicked
+
+        createTestRE(arr):
+            Insert \W* between every two characters
+
+        Options Page/Customizations:
+            Page reload:
+                Currently, after the search bar is cleared, the page reloads (LOCATION.RELOAD()) because the search suggestions remain on some sites (e.g., Amazon) if I only set the SEARCHBAR.TEXTCONTENT = '';
+                    Could allow this to be one of multiple options that the user can choose
+                        Other options:
+                            Just erase text (no LOCATION.RELOAD())
+                            Return to homepage (LOCATION.ORIGIN())
+                            Close tab
+                            Redirect to different URL
+                                LOCATION.REPLACE()
+                                DECLARATIVE NET REQUEST
+                            Alert
+                                Custom message
+                            Alert with option to dismiss/continue (like screentime app)
+
+            Grouping:
+                Allow the user to assign one outcome to multiple strings or URLs
+                    Examples:
+                        Example 1:
+                            For strings "stringA", "stringB", "stringC":
+                                Just erase content and reload page
+                            For strings "stringD", "stringE", "stringF":
+                                Erase content and dismissable alert
+                        Example 2:
+                            If user searches one of the strings on youtube.com or google videos, redirect URL to homepage or designated video
+                    Could use drag + drop
+            Toggling on/off:
+                Allow user to allow individual strings to be searched without having to delete them from the list
+
+            Separate sections for URLS (DECLARATIVE NET REQUEST) and search terms:
+                Think it could be confusing to have them all together
+                    
+            Everything in the Options Page/Customizations outline regarding search terms can be considered for URLs/DECLARATIVE NET REQUEST
+
+        Alternative to Options Page:
+            Could try to use hidden DIVs that expand when a button held in the LIST ITEM is clicked on
+            
+
+                        
+            
+        
+
+
+
+
+
+    
