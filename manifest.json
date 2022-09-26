@@ -28,8 +28,7 @@
         "declarativeNetRequest"
     ],
     "host_permissions": [
-        "https://www.nba.com/",
-        "https://www.nfl.com/"
+        "<all_urls>"
       ]
 }
 
