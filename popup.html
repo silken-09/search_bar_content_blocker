@@ -8,8 +8,7 @@
 		<link rel="stylesheet" href="popup.css" />
 		<link
 			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-		/>
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 		<style>
 			.material-symbols-outlined {
 				font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
@@ -21,11 +20,10 @@
 	<body>
 		<h1>Content Blocker</h1>
 
-		<li class="list-item">
-			<div class="li-content-container">
+		<div class="add-li-container">
+			<div class="add-li-content">
 				<input type="text" class="li-input" />
-				<button class="plus-bttn">
-					<!-- add-button -->
+				<button class="add-li-button">
 					<span
 						class="material-symbols-outlined"
 						style="font-size: 24px; vertical-align: middle"
@@ -33,7 +31,7 @@
 					>
 				</button>
 			</div>
-		</li>
+		</div>
 
 		<div class="list-container">
 			<ol class="list"></ol>
@@ -41,49 +39,33 @@
 
 		<template>
 			<li class="new-list-item">
-				<!-- blocked-item/censored-item -->
+				<!-- blocked-item/censored-item/blocked-li -->
 				<input
 					type="checkbox"
 					id="collapsible-num"
-					class="collapsible toggle"
-				/><label for="collapsible-num" class="collapsible-label"
+					class="collapsible toggle" /><label
+					for="collapsible-num"
+					class="collapsible-label"
 					><label class="switch"
 						><input type="checkbox" class="switch-input" checked="" /><span
-							class="slider round"
-						></span></label
-					><span class="collapsible-label-span"></span
+							class="slider round"></span
+					></label>
+					<span class="blocked-string"></span
 					><span class="caret material-symbols-outlined">expand_more</span>
 					<div class="vertical-separator"></div>
 					<span class="trash-button-span material-symbols-outlined"
 						>delete</span
 					>
-
-					<!-- <label
-						for="delete-checkbox-num"
-						class="delete-checkbox-label material-symbols-outlined"
-					>
-						delete
-						<input
-							type="checkbox"
-							id="delete-checkbox-num"
-							class="delete-checkbox"
-						/>
-					</label> -->
 				</label>
-				<div class="options-grid-container">
-					<!-- censor-options-container/options-container -->
-					<div class="options-grid-content">
-						<!-- censor-options-content/options-content -->
+				<div class="options-container">
+					<div class="options-content">
 						<input
 							type="radio"
 							id="block-num"
 							class="block radio-input"
 							name="options-num"
 							value="block"
-							checked=""
-						/>
-						<!-- id="radio-input-block-num/radio-block-num" -->
-						<!-- radio-input-block/radio-block -->
+							checked="" />
 						<label for="block-num" class="block-radio-label radio-label"
 							>Block</label
 						><input
@@ -91,8 +73,9 @@
 							id="redirect-num"
 							class="redirect radio-input"
 							name="options-num"
-							value="redirect"
-						/><label for="redirect-num" class="redirect-radio-label radio-label"
+							value="redirect" /><label
+							for="redirect-num"
+							class="redirect-radio-label radio-label"
 							>Redirect</label
 						>
 						<div class="redirect-div">
@@ -100,8 +83,10 @@
 								<input
 									type="url"
 									class="redirect-url"
-									placeholder="https://example.com"
-								/><button class="url-button">Enter</button>
+									placeholder="https://example.com" /><button
+									class="url-button">
+									Enter
+								</button>
 							</div>
 							<div class="rdc2 display-none">
 								<p class="pURL"></p>
@@ -113,6 +98,6 @@
 			</li>
 		</template>
 
-		<script src="popup.js"></script>
+		<script type="module" src="popup.js"></script>
 	</body>
 </html>
